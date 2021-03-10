@@ -1,6 +1,6 @@
-import { Command } from "./../entities/command";
-import { Coordinate } from "./../entities/coordinate";
-import { Direction } from "./../entities/direction";
+import { Command } from "../types/command";
+import { Coordinate } from "../types/coordinate";
+import { Direction } from "../types/direction";
 
 export interface IRobotic {
     getPosition(): Coordinate;

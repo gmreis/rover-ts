@@ -1,6 +1,6 @@
 import { assert } from "chai";
-import { Coordinate } from "../../src/entities/coordinate";
-import { Plateau } from "./../../src/entities/plateau";
+import { Coordinate } from "../../src/types/coordinate";
+import { Plateau } from "../../src/entities/plateau";
 
 
 describe('Plateau', function() {

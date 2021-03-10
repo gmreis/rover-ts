@@ -1,5 +1,5 @@
-import { Coordinate } from "./../entities/coordinate";
-import { IObstacle } from "./../interface/iobstacle";
+import { Coordinate } from "../types/coordinate";
+import { IObstacle } from "../interfaces/iobstacle";
 
 export class AntiCollision {
     private obstacleMap: Map<String, IObstacle> = new Map();

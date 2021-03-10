@@ -1,13 +1,13 @@
-import { Command } from "./command";
-import { Coordinate } from "./coordinate";
-import { Direction } from "./direction";
-import { IRobotic } from "./../interface/irobotic";
+import { Command } from "../types/command";
+import { Coordinate } from "../types/coordinate";
+import { Direction } from "../types/direction";
+import { IRobotic } from "../interfaces/irobotic";
 
 export class Rover implements IRobotic {
     constructor(
         private position: Coordinate,
         private direction: Direction,
-        private commandList: Command[]
+        private commandList: Command[] = []
     ) {}
 
     public getPosition(): Coordinate {
