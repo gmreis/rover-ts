@@ -31,16 +31,16 @@ export class Rover implements IRobotic {
         let nextY = this.position.Y;
 
         switch(this.direction) {
-            case Direction.NORTH:
+            case Direction.N:
                 nextY = nextY + 1;
                 break;
-            case Direction.SOUTH:
+            case Direction.S:
                 nextY = nextY - 1;
                 break;
-            case Direction.EAST:
+            case Direction.E:
                 nextX = nextX + 1;
                 break;
-            case Direction.WEST:
+            case Direction.W:
                 nextX = nextX - 1;
                 break;
         }

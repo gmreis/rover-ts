@@ -10,9 +10,9 @@ describe('AntiCollision', function() {
     let antiCollision: AntiCollision;
 
     beforeEach(function () {
-        roverOne = new Rover({ X: 1, Y: 1 }, Direction.NORTH);
-        roverTwo = new Rover({ X: 2, Y: 2 }, Direction.NORTH);
-        roverThree = new Rover({ X: 3, Y: 3 }, Direction.NORTH);
+        roverOne = new Rover({ X: 1, Y: 1 }, Direction.N);
+        roverTwo = new Rover({ X: 2, Y: 2 }, Direction.N);
+        roverThree = new Rover({ X: 3, Y: 3 }, Direction.N);
 
         antiCollision = new AntiCollision([ roverOne, roverTwo, roverThree ]);
     });
