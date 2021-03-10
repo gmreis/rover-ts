@@ -9,15 +9,15 @@ export class AntiCollision {
         obstacleList.forEach(this.addObstacle, this);
     }
 
-    public addObstacle(obstacle: IObstacle) {
+    public addObstacle(obstacle: IObstacle): void {
         this.obstacleMap.set(`${obstacle.getPosition().X}:${obstacle.getPosition().Y}`, obstacle);
     }
 
-    public hasObstacle(coordinate: Coordinate) {
+    public hasObstacle(coordinate: Coordinate): boolean {
         return this.obstacleMap.has(`${coordinate.X}:${coordinate.Y}`);
     }
 
-    public removeObstacle(obstacle: IObstacle) {
+    public removeObstacle(obstacle: IObstacle): void {
         this.obstacleMap.delete(`${obstacle.getPosition().X}:${obstacle.getPosition().Y}`);
     }
 }
