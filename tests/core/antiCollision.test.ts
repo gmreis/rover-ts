@@ -1,9 +1,7 @@
 import { assert } from "chai";
 import { AntiCollision } from "../../src/core/antiCollision";
-import { Coordinate } from "../../src/types/coordinate";
-import { Rover } from "../../src/entities/rover";
 import { Direction } from "../../src/types/direction";
-import { Command } from "../../src/types/command";
+import { Rover } from "../../src/entities/rover";
 
 describe('AntiCollision', function() {
     let roverOne: Rover;

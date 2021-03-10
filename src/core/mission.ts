@@ -1,9 +1,8 @@
-import { Coordinate } from "./../entities/coordinate";
+import { Coordinate } from "../types/coordinate";
 import { Plateau } from "./../entities/plateau";
 import { AntiCollision } from "./antiCollision";
-import { IRobotic } from "./../interface/irobotic";
-import { Command } from "./../entities/command";
-import { Direction } from "./../entities/direction";
+import { IRobotic } from "../interfaces/irobotic";
+import { Command } from "../types/command";
 
 export class Mission {
     private plateau: Plateau;
@@ -19,7 +18,7 @@ export class Mission {
         this.roboticList = roboticList;
     }
 
-    public start() {
+    public start(): void {
         this.roboticList.forEach(this.executeCommand, this);
     }
 
@@ -42,13 +41,5 @@ export class Mission {
         const hasObstacle = nextPosition && this.anticollision.hasObstacle(nextPosition);
 
         return isPositionValid && !hasObstacle;
-    }
-
-    public result() {
-        this.roboticList.forEach(this.checkPosition);
-    }
-
-    private checkPosition(robotic: IRobotic): void {
-        console.log('checkPosition', robotic.getPosition(), Direction[robotic.getDirection()]);
     }
 }
