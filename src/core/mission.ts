@@ -22,10 +22,6 @@ export class Mission {
         this.roboticList.forEach(this.executeCommand, this);
     }
 
-    public report(callback: (log: string) => void): void {
-        this.roboticList.forEach(robotic => callback(robotic.getLog()));
-    }
-
     private executeCommand(robotic: IRobotic): void {
         let command;
         while (command = robotic.getNexCommand()) {
