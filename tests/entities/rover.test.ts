@@ -27,6 +27,11 @@ describe('Rover', function() {
         assert.strictEqual(rover.getNexCommand(), undefined);
     });
 
+    it('Should return a string with position and direction', function() {
+        const rover = new Rover(position, Direction.S);
+        assert.strictEqual(rover.getLog(), '5 5 S');
+    });
+
     describe('Next Position', function() {
         it('Should return to the next position to the North.', function() {
             const rover = new Rover(position, Direction.N);
