@@ -22,6 +22,7 @@ const { File } = rewiremock.proxy(() => require('../../src/utils/file'), () => m
 describe('File', function() {
     afterEach(() => {
         fsStub.existsSync.reset();
+        fsStub.createReadStream.reset();
     });
 
     describe('fileExist', () => {
