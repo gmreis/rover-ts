@@ -7,6 +7,7 @@ export interface IRobotic {
     getDirection(): Direction;
     getNexCommand(): Command | void;
     getNextPosition(command: string): Coordinate;
+    getLog(): string;
     move(): void;
     turn(command: Command): void;
 }

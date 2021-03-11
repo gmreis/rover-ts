@@ -66,4 +66,8 @@ export class Rover implements IRobotic {
 
         this.direction = nextDirection % 4;
     }
+
+    public getLog(): string {
+        return `${this.position.X} ${this.position.Y} ${Direction[this.direction]}`;
+    }
 }
