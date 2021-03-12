@@ -1,4 +1,4 @@
-# Rouver-TS
+# Rover-TS
 
 This project was developed for the purpose of studying the Typescript language with unit tests.
 

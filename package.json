@@ -1,13 +1,13 @@
 {
-  "name": "rouver-ts",
+  "name": "rover-ts",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
   "bin": {
-    "rouver-ts": "./bin/run"
+    "rover-ts": "./bin/run"
   },
   "scripts": {
-    "start": "npm run build && node build/index.js",
+    "start": "node build/index.js",
     "build": "tsc --project tsconfig.json",
     "test": "nyc --extension .ts mocha -r ts-node/register ./tests/**/*.test.ts ./tests/*.test.ts"
   },
