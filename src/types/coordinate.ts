@@ -1,4 +1,4 @@
-export type Coordinate = {
-    X: number,
-    Y: number
+export interface Coordinate {
+  X: number
+  Y: number
 }
